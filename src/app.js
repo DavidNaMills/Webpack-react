@@ -1,14 +1,12 @@
-import './styles/test.scss';
+import './css/test.scss';
+
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Main from './components/Main';
+import ReactDom from 'react-dom';
 
-const app = document.getElementById('app');
+import Title from './components/Title';
 
-const jsx = (
-    <div className="test">
-        <Main />
-    </div>
-);
+const anchor = document.getElementById("root");
+const jsx = <div><Title /></div>
 
-ReactDOM.render(jsx, app);
+
+ReactDom.render(jsx, anchor);

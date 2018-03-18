@@ -1,0 +1,19 @@
+@import '_colors';
+body {
+  background: $bgcolor;
+};
+
+h5 {
+  color: red;
+}
+
+p {
+  color: purple;
+}
+
+@font-face {
+  font-family: 'MyFont';
+  src:  url('./font/SovietProgram.ttf') format('ttf');
+  font-weight: 600;
+  font-style: normal;
+}
