@@ -87,7 +87,13 @@ module.exports={
         new BundleAnalyzerPlugin(),
         new CleanWebpackPlugin(['dist']),
         new HtmlWebpackPlugin({
-            template: 'index.html'
+            template: 'index.html',
+            minify: {
+                collapseWhitespace: true,
+                collapseInlineTagWhitespace: true,
+                removeComments: true,
+                removeRedundantAttributes:true
+            }
         }),
         extractPlugin,
         ...PLUGINS
